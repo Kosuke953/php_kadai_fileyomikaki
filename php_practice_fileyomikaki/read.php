@@ -9,10 +9,15 @@
 <body>
     <table border="1">
         <tr>
-            <th>名前</th>
             <th>性別</th>
             <th>年齢</th>
-            <th>イベントを知ったきっかけ</th>
+            <th>Hello Worldを知ったきっかけ</th>
+            <th>アクセス頻度</th>
+            <th>１日のプレイ時間</th>
+            <th>利用しているデバイス</th>
+            <th>課金額Average</th>
+            <th>希望イベント</th>
+            <th>意見・要望</th>
         </tr>
 
         <?php
@@ -26,7 +31,7 @@
                 $arrayCsv[] = explode(",",$value);
             }
             //確認用
-            print_r($arrayCsv);
+            // print_r($arrayCsv);
         ?>
         <?php foreach($arrayCsv as $value){ ?>
         <tr>
@@ -34,13 +39,16 @@
             <td><?php echo $value[1] ?></td>
             <td><?php echo $value[2] ?></td>
             <td><?php echo $value[3] ?></td>
+            <td><?php echo $value[4] ?></td>
+            <td><?php echo $value[5] ?></td>
+            <td><?php echo $value[6] ?></td>
+            <td><?php echo $value[7] ?></td>
+            <td><?php echo $value[8] ?></td>
         </tr>
         <?php } ?>
     </table>
 </body>
 </html>
-
-
 
 <!-- <?php
 

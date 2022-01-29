@@ -1,12 +1,27 @@
 <?php
     // 取得したデータを変数に変換
-    $name = $_POST["name"];
-    $gender = $_POST["gender"];
     $age = $_POST["age"];
-    $find_event = $_POST["find_event"];
+    $gender = $_POST["gender"];
+    $find_HelloWorld = $_POST["find_HelloWorld"];
+    $access_frequency = $_POST["access_frequency"];
+    $playtime = $_POST["playtime"];
+    $device = $_POST["device"];
+    $BillionSystem = $_POST["BillionSystem"];
+    $event = $_POST["event"];
+    $review = $_POST["review"];
 
-    // 取得したデータを連想配列に変換
-    $answer = $name.",".$gender.",".$age.",".$find_event;
+    // 取得したデータを配列に変換
+    $answer =
+    $age //項目0
+    .",".$gender //項目1
+    .",".$find_HelloWorld //項目2
+    .",".$access_frequency //項目3
+    .",".$playtime //項目4
+    .",".$device //項目5
+    .",".$BillionSystem //項目6
+    .",".$event //項目7
+    .",".$review //項目8
+    ;
     //配列に情報が入っているか確認。
     var_dump($answer);
 
