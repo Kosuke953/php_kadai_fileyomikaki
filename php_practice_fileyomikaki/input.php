@@ -9,34 +9,63 @@
 </head>
 <body>
     <header>
-        <div class="hero-image">
-            
-        </div>
         <div class="title">
             <h1>アンケートにご協力をお願いいたします。</h1>
-            <p>所要時間は◯分です。</p>
+            <p>所要時間は５分です。</p>
         </div>
     </header>
     <main>
         <form method="POST" action="fwrite.php">
             <dl>
-                <dt>お名前</dt>
-                <dd><input type="text" name="name" placeholder="お名前"></dd>
-                <dt>性別</dt>
-                <dd><input type="radio" name="gender" value="女性">女性</dd>
+                <dt>Q1. 性別</dt>
                 <dd><input type="radio" name="gender" value="男性">男性</dd>
-                <dt>年齢</dt>
-                <dd><input type="radio" name="age" value="10代">10代</dd>
-                <dd><input type="radio" name="age" value="20代">20代</dd>
-                <dd><input type="radio" name="age" value="30代">30代</dd>
-                <dd><input type="radio" name="age" value="40代">40代</dd>
-                <dd><input type="radio" name="age" value="50代">50代</dd>
-                <dt>イベントを知ったきっかけ</dt>
-                <dd><input type="radio" name="find_event" value="SNS">SNS</dd>
-                <dd><input type="radio" name="find_event" value="インターネット">インターネット</dd>
-                <dd><input type="radio" name="find_event" value="新聞">新聞</dd>
-                <dd><input type="radio" name="find_event" value="友人からの紹介">友人からの紹介</dd>
-                <dd><input type="radio" name="find_event" value="その他">その他</dd>
+                <dd><input type="radio" name="gender" value="女性">女性</dd>
+                <dt>Q2. あなたは、どのように Hello World を知りましたか。</dt>
+                <dd><input type="radio" name="find_HelloWorld" value="ラジオ">ラジオ</dd>
+                <dd><input type="radio" name="find_HelloWorld" value="テレビ">テレビ</dd>
+                <dd><input type="radio" name="find_HelloWorld" value="雑誌">雑誌</dd>
+                <dd><input type="radio" name="find_HelloWorld" value="当社のホームページ">当社のホームページ</dd>
+                <dd><input type="radio" name="find_HelloWorld" value="検索エンジン">検索エンジン</dd>
+                <dd><input type="radio" name="find_HelloWorld" value="SNS・ブログ">SNS・ブログ</dd>
+                <dd><input type="radio" name="find_HelloWorld" value="家族・友人・知人">家族・友人・知人</dd>
+                <dd><input type="radio" name="find_HelloWorld" value="その他">その他<input type="text" name="find" placeholder="ご自由に入力ください。"></dd>
+                <!-- <dd><input type="text" name="name" placeholder="お名前"></dd> -->
+                <dt>Q3.  Hello World にどのくらいの頻度でアクセスしていますか。</dt>
+                <dd><input type="radio" name="access_frequency" value="週１回">週１回</dd>
+                <dd><input type="radio" name="access_frequency" value="週２回">週２回</dd>
+                <dd><input type="radio" name="access_frequency" value="週３回">週３回</dd>
+                <dd><input type="radio" name="access_frequency" value="週４回">週４回</dd>
+                <dd><input type="radio" name="access_frequency" value="週５回">週５回</dd>
+                <dd><input type="radio" name="access_frequency" value="週６回">週６回</dd>
+                <dd><input type="radio" name="access_frequency" value="毎日">毎日</dd>
+                <dt>Q4.  Hello World について、１日どのくらいプレイしていますか。</dt>
+                <dd><input type="radio" name="playtime" value="１時間未満">１時間未満</dd>
+                <dd><input type="radio" name="playtime" value="１時間以上２時間未満">１時間以上２時間未満</dd>
+                <dd><input type="radio" name="playtime" value="２時間以上３時間未満">２時間以上３時間未満</dd>
+                <dd><input type="radio" name="playtime" value="３時間以上４時間未満">３時間以上４時間未満</dd>
+                <dd><input type="radio" name="playtime" value="４時間以上">４時間以上</dd>
+                <dt>Q5. 利用しているデバイスはどれですか。</dt>
+                <dd><input type="radio" name="device" value="Android">Android</dd>
+                <dd><input type="radio" name="device" value="iPhone">iPhone</dd>
+                <dd><input type="radio" name="device" value="Android tablet">Android tablet</dd>
+                <dd><input type="radio" name="device" value="iPad">iPad</dd>
+                <dd><input type="radio" name="device" value="PC">PC</dd>
+                <dd><input type="radio" name="device" value="その他">その他</dd>
+                <dt>Q6. １ヶ月の課金額は平均でどのくらいでしょうか。</dt>
+                </dt>
+                <dd><input type="radio" name="BillionSystem" value="500円未満">500円未満</dd>
+                <dd><input type="radio" name="BillionSystem" value="500円以上1,000円未満">500円以上1,000円未満</dd>
+                <dd><input type="radio" name="BillionSystem" value="1,000円以上5,000円未満">1,000円以上5,000円未満</dd>
+                <dd><input type="radio" name="BillionSystem" value="5,000円以上10,000円未満">5,000円以上10,000円未満</dd>
+                <dd><input type="radio" name="BillionSystem" value="10,000円以上">10,000円以上</dd>
+                <dt>Q7.  Hello World あったらいいイベントは？</dt>
+                <dd><input type="radio" name="event" value="SNS">SNS</dd>
+                <dd><input type="radio" name="event" value="ホームページ">ホームページ</dd>
+                <dd><input type="radio" name="event" value="新聞">新聞</dd>
+                <dd><input type="radio" name="event" value="友人からの紹介">友人からの紹介</dd>
+                <dd><input type="radio" name="event" value="その他">その他</dd>
+                <dt>Q8.  Hello World に対してご意見・ご要望がございましたら、ご自由にお書きください。</dt>
+                <textarea name="review" cols="30" rows="10"></textarea>
             </dl>
             <input type="submit" value="回答する">
         </form>
